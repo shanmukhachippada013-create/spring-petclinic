@@ -1,0 +1,9 @@
+node {
+    stage('git-clone'){
+         git branch: 'main', url: 'https://github.com/shanmukhachippada013-create/Docker-Spring-Petclinic.git'
+         }
+         stage('build generation'){
+            sh 'mvn package'
+             
+         }
+         }
